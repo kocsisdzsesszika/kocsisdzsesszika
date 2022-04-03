@@ -1,0 +1,34 @@
+ sudo -i
+ sudo apt install net-tools
+ ifconfig
+ apt get-install ssh
+ mc
+ etc
+ ssh
+ ssh legalso -> f4 
+ mc
+ etc
+ netplan
+ f4
+ sudo netplan apply
+ vncserver
+ vncserver -kill: sajat kod
+ netstat -ant
+ show ip
+ apt list| grep openssh
+ apt-get install openssh-server
+ vncserver
+ sudo apt install tigervnc-standalone-server
+ vnc tiger belepes a sajat koddal
+
+network:
+ version: 2
+ renderer:NetworkManager
+ ethernets:
+   enp0s3:
+     dhcp4: no
+     addresses
+      -10.16.94.48/16
+     gateway4: 10.16.255.254
+     nameservers:
+       addresses: [172.16.18.16]
